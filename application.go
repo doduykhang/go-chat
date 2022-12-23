@@ -17,5 +17,5 @@ func HelloHandler(w http.ResponseWriter, r *http.Request) {
     	nameGenerator := namegenerator.NewNameGenerator(seed)
 
     	name := nameGenerator.Generate()
-	w.Write([]byte("Hello " + name))	
+	w.Write([]byte("Hello update pipe test " + name))	
 }
